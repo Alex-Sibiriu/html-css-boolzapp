@@ -21,90 +21,207 @@
 
 <body>
 
-  <div class="container d-flex debug">
+  <div class="container d-flex">
 
     <!-- LEFT COLUMN -->
-    <div class="col l-col debug">
-      <div class="top-bar d-flex">
+    <div class="col l-col">
 
-      </div>
-      <div class="notifications d-flex">
+      <!-- TOP BAR -->
+      <div class="top-bar d-flex jc-between item-center padding-s">
+        <div class="user-img">
+          <img class="circle-form" src="assets/img/avatar_io.jpg" alt="your avatar">
+        </div>
 
+        <div class="menu-icons d-flex">
+          <i class="fa-solid fa-circle-notch"></i>
+          <i class="fa-solid fa-message"></i>
+          <i class="fa-solid fa-ellipsis-vertical"></i>
+        </div>
       </div>
-      <div class="search-bar debug">
+      <!-- /TOP BAR -->
 
+      <!-- NOTIFICATIONS -->
+      <div class="notifications d-flex item-center padding-s">
+        <div class="icon d-flex item-center">
+          <i class="fa-solid fa-bell-slash circle-form d-flex jc-center"></i>
+        </div>
+
+        <div class="notification-status">
+          <h3>Ricevi notifiche di nuovi messaggi</h3>
+          <a href="#">Attiva notifiche desktop</a>
+        </div>
       </div>
+      <!-- /NOTIFICATIONS -->
+
+      <!-- SEARCH BAR -->
+      <div class="search-bar padding-xs d-flex item-center">
+        <div class="icon d-flex jc-center item-center">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <input type="search" placeholder="Cerca o inizia una nuova chat">
+      </div>
+      <!-- /SEARCH BAR -->
 
       <!-- CONTACT LIST -->
       <div class="contact-list">
-        
+
         <div class="latest-msg d-flex f-column">
 
-          <div class="row d-flex debug">
-            <div class="col user-img"></div>
-            <div class="col user-name"></div>
-            <div class="col msg-hour"></div>
+          <!-- Contact 1 -->
+          <div class="row padding-s d-flex item-center jc-between">
+            <div class="user-info d-flex item-center">
+              <div class="col user-img">
+                <img class="circle-form" src="assets/img/avatar_1.jpg" alt="User 1">
+              </div>
+              <div class="col user-name">
+                <h2>Michele</h2>
+                <p class="msg-preview">Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+            <div class="col msg-hour">
+              <p>16:13</p>
+            </div>
           </div>
-          
-          <div class="row d-flex debug">
-            <div class="col user-img"></div>
-            <div class="col user-name"></div>
-            <div class="col msg-hour"></div>
-          </div>
+          <!-- /Contact 1 -->
 
-          <div class="row d-flex debug">
-            <div class="col user-img"></div>
-            <div class="col user-name"></div>
-            <div class="col msg-hour"></div>
+          <!-- Contact 2 -->
+          <div class="row padding-s d-flex item-center jc-between">
+            <div class="user-info d-flex item-center">
+              <div class="col user-img">
+                <img class="circle-form" src="assets/img/avatar_2.jpg" alt="User 2">
+              </div>
+              <div class="col user-name">
+                <h2>Fabio</h2>
+                <p class="msg-preview">Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+            <div class="col msg-hour">
+              <p>16:05</p>
+            </div>
           </div>
+          <!-- /Contact 2 -->
           
-          <div class="row d-flex debug">
-            <div class="col user-img"></div>
-            <div class="col user-name"></div>
-            <div class="col msg-hour"></div>
+          <!-- Contact 3 -->
+          <div class="row padding-s d-flex item-center jc-between">
+            <div class="user-info d-flex item-center">
+              <div class="col user-img">
+                <img class="circle-form" src="assets/img/avatar_3.jpg" alt="User 3">
+              </div>
+              <div class="col user-name">
+                <h2>Samuele</h2>
+                <p class="msg-preview">Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+            <div class="col msg-hour">
+              <p>16:03</p>
+            </div>
           </div>
+          <!-- /Contact 3 -->
+
+          <!-- Contact 4 -->
+          <div class="row padding-s d-flex item-center jc-between">
+            <div class="user-info d-flex item-center">
+              <div class="col user-img">
+                <img class="circle-form" src="assets/img/avatar_4.jpg" alt="User 4">
+              </div>
+              <div class="col user-name">
+                <h2>Alessandro B.</h2>
+                <p class="msg-preview">Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+            <div class="col msg-hour">
+              <p>15:50</p>
+            </div>
+          </div>
+          <!-- /Contact 4 -->
           
-          <div class="row d-flex debug">
-            <div class="col user-img"></div>
-            <div class="col user-name"></div>
-            <div class="col msg-hour"></div>
+          <!-- Contact 5 -->
+          <div class="row padding-s d-flex item-center jc-between">
+            <div class="user-info d-flex item-center">
+              <div class="col user-img">
+                <img class="circle-form" src="assets/img/avatar_5.jpg" alt="User 5">
+              </div>
+              <div class="col user-name">
+                <h2>Alessandro L.</h2>
+                <p class="msg-preview">Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+            <div class="col msg-hour">
+              <p>15:45</p>
+            </div>
           </div>
+          <!-- /Contact 5 -->
           
-          <div class="row d-flex debug">
-            <div class="col user-img"></div>
-            <div class="col user-name"></div>
-            <div class="col msg-hour"></div>
+          <!-- Contact 6 -->
+          <div class="row padding-s d-flex item-center jc-between">
+            <div class="user-info d-flex item-center">
+              <div class="col user-img">
+                <img class="circle-form" src="assets/img/avatar_6.jpg" alt="User 6">
+              </div>
+              <div class="col user-name">
+                <h2>Claudia</h2>
+                <p class="msg-preview">Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+            <div class="col msg-hour">
+              <p>15:40</p>
+            </div>
           </div>
+          <!-- /Contact 6 -->
           
-          <div class="row d-flex debug">
-            <div class="col user-img"></div>
-            <div class="col user-name"></div>
-            <div class="col msg-hour"></div>
+          <!-- Contact 7 -->
+          <div class="row padding-s d-flex item-center jc-between">
+            <div class="user-info d-flex item-center">
+              <div class="col user-img">
+                <img class="circle-form" src="assets/img/avatar_7.jpg" alt="User 7">
+              </div>
+              <div class="col user-name">
+                <h2>Federico</h2>
+                <p class="msg-preview">Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+            <div class="col msg-hour">
+              <p>15:22</p>
+            </div>
           </div>
+          <!-- /Contact 7 -->
           
-          <div class="row d-flex debug">
-            <div class="col user-img"></div>
-            <div class="col user-name"></div>
-            <div class="col msg-hour"></div>
+          <!-- Contact 8 -->
+          <div class="row padding-s d-flex item-center jc-between">
+            <div class="user-info d-flex item-center">
+              <div class="col user-img">
+                <img class="circle-form" src="assets/img/avatar_8.jpg" alt="User 8">
+              </div>
+              <div class="col user-name">
+                <h2>Davide</h2>
+                <p class="msg-preview">Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+            <div class="col msg-hour">
+              <p>15:15</p>
+            </div>
           </div>
+          <!-- /Contact 8 -->
         </div>
 
       </div>
+      <!-- /CONTACT LIST -->
 
     </div>
+    <!-- /LEFT COLUMN -->
 
     <!-- RIGHT COLUMN -->
-    <div class="col dx-col debug">
-      <div class="top-bar d-flex debug">
+    <div class="col dx-col">
+      <div class="top-bar d-flex">
 
       </div>
-      <div class="msg-box debug">
+      <div class="msg-box">
 
       </div>
-      <div class="txt-bar d-flex debug">
+      <div class="txt-bar d-flex">
 
       </div>
-      </div>
+    </div>
   </div>
   
 </body>
