@@ -251,6 +251,7 @@ input {
 .msg-balloon .msg-infos {
   font-size: .6rem;
   color: var(--icons-top-bar);
+  align-items: flex-end;
 }
 
 .msg-balloon .msg-infos i {
