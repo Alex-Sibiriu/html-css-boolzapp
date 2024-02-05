@@ -125,6 +125,7 @@ input {
 
 .l-col {
   width: 380px;
+  background-color: white;
   border-right: 1px solid rgb(160, 160, 160);
 }
 
@@ -155,7 +156,7 @@ input {
   background-color: white;
   color: var(--bg-notifications);
   line-height: 50px;
-  margin-right: 15px;
+  margin-right: 20px;
 }
 
 .l-col .notifications .notification-status {
@@ -192,12 +193,11 @@ input {
   overflow-y: scroll;
 }
 
-
-/* TODO:Aggiungere bordi */
 .contact-list .latest-msg .row {
   height: 80px;
   background-color: white;
   cursor: pointer;
+  border: 1px solid whitesmoke;
 }
 
 .contact-list .latest-msg .row:hover {
@@ -248,13 +248,45 @@ input {
   align-self: flex-end;
 }
 
-.msg-balloon .msg-options {
+.msg-balloon .msg-infos {
   font-size: .6rem;
   color: var(--icons-top-bar);
 }
 
-.msg-balloon .msg-options i {
+.msg-balloon .msg-infos i {
   font-size:  .7rem;
+}
+
+.msg-balloon .msg-infos .msg-menu {
+  position: relative;
+}
+
+.msg-balloon .msg-infos .msg-menu ul {
+  display: none;
+  list-style: none;
+  background-color: white;
+  width: 150px;
+  text-align: center;
+  box-shadow: 0 0 5px black;
+}
+
+.msg-balloon .msg-infos .msg-menu ul li {
+  border-bottom: 1px solid black;
+  font-size: 1rem;
+  line-height: 2rem;
+  color: black;
+  cursor: pointer;
+}
+
+.msg-balloon .msg-infos .msg-menu ul li:hover {
+  background-color: whitesmoke;
+}
+
+.msg-balloon .msg-infos .msg-menu:hover ul {
+  display: block;
+  position: absolute;
+  top: 10px;
+  right: 10px;
 }
 
 /* TEXT BAR */
@@ -275,9 +307,6 @@ input {
   border-radius: 10px;
   font-size: 1rem;
 }
-
-
-
 
 /*******************************************
   MEDIA QUERY
@@ -320,12 +349,7 @@ input {
   .msg-box {
     padding: 50px 6%;
   }
-
 }
-
-
-
-
 
 /**************
   MOBILE
@@ -357,5 +381,4 @@ input {
   .txt-bar input {
     width: 100%;
   }
-  
 }
