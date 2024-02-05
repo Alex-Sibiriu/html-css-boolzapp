@@ -1,0 +1,69 @@
+:root {
+  --bg-send-msg: #D5F9BA;
+  --bg-top-bar: #EAEAEA;
+  --bg-notifications: #8EDAFC;
+  --bg-latest-msg: #FAFAFA;
+  --txt-prev-msg: #BFC2C4;
+  --icons-top-bar: #B1B1B1;
+  --icons-write-bar: #6B7376;
+  --last-access: #7A8184;
+}
+
+/* CSS RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*******************************************
+  UTILITY
+*******************************************/
+.container {
+  width: 80%;
+  height: 95%;
+  margin:auto;
+  background-color: rebeccapurple;
+}
+
+/*******************************************
+  GENERAL
+*******************************************/
+body {
+  font-family: "Lato", sans-serif;
+  height: 100vh;
+  padding: 2.5vh 0;
+  background: linear-gradient(to bottom, #009688 0%,#009688 15%, #ffffff 15%, #ffffff 85%);
+}
+
+
+
+
+
+/*******************************************
+  MEDIA QUERY
+*******************************************/
+/**************
+  TABLET
+**************/
+@media (max-width: 992px) {
+  body {
+    padding: 0;
+  }
+  
+  .container {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+
+
+
+
+/**************
+  MOBILE
+**************/
+@media (max-width: 541px) {
+  
+}
