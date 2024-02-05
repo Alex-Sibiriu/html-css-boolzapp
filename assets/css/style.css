@@ -3,10 +3,14 @@
   --bg-top-bar: #EAEAEA;
   --bg-notifications: #8EDAFC;
   --bg-latest-msg: #FAFAFA;
+  --bg-txt-bar: #F3EEEA;
   --txt-prev-msg: #BFC2C4;
   --icons-top-bar: #B1B1B1;
   --icons-write-bar: #6B7376;
   --last-access: #7A8184;
+  --top-bar-h: 70px;
+  --notifications-h: 80px;
+  --search-bar-h: 50px;
 }
 
 /* CSS RESET */
@@ -19,11 +23,22 @@
 /*******************************************
   UTILITY
 *******************************************/
+.debug {
+  border: 1px solid purple;
+}
+
 .container {
   width: 80%;
   height: 95%;
   margin:auto;
-  background-color: rebeccapurple;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.f-column {
+  flex-direction: column;
 }
 
 /*******************************************
@@ -37,6 +52,59 @@ body {
 }
 
 
+/*******************************************
+  MAIN
+*******************************************/
+.container > .col {
+  height: 100%;
+}
+
+.l-col {
+  width: 380px;
+  overflow: hidden;
+}
+
+.dx-col {
+  width: calc(100% - 380px);
+}
+
+.top-bar {
+  height: var(--top-bar-h);
+  background-color: var(--bg-top-bar);
+}
+
+
+/* LEFT COLUMN */
+.notifications {
+  height: var(--notifications-h);
+  background-color: var(--bg-notifications);
+}
+
+.search-bar {
+  height: var(--search-bar-h);
+  background-color: var(--bg-latest-msg);
+}
+
+.contact-list {
+  height: calc(100% - var(--top-bar-h) - var(--notifications-h) - var(--search-bar-h));
+  overflow-y: scroll;
+}
+
+.latest-msg .row {
+  height: 80px;
+}
+
+/* RIGHT COLUMN */
+.msg-box {
+  height: calc(100% - (var(--top-bar-h) * 2));
+  background-image: url('../img/mine.jpg');
+  overflow-y: scroll;
+}
+
+.txt-bar {
+  height: var(--top-bar-h);
+  background-color: var(--bg-txt-bar);
+}
 
 
 
@@ -50,11 +118,32 @@ body {
   body {
     padding: 0;
   }
-  
+
   .container {
     width: 100%;
     height: 100%;
   }
+
+  .l-col {
+    width: 90px;
+  }
+
+  .dx-col {
+    width: calc(100% - 90px);
+  }
+
+  /* LEFT COLUMN */
+  .l-col .notifications,
+  .l-col .search-bar,
+  .l-col .user-name,
+  .l-col .msg-hour {
+    display: none;
+  }
+
+  .contact-list {
+    height: calc(100% - var(--top-bar-h));
+  }
+
 }
 
 
@@ -65,5 +154,12 @@ body {
   MOBILE
 **************/
 @media (max-width: 541px) {
+  .l-col {
+    display: none;
+  }
+
+  .dx-col {
+    width: 100%;
+  }
   
 }
