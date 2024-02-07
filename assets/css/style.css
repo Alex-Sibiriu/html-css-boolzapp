@@ -263,6 +263,25 @@ input {
   margin-bottom: 10px;
   border-radius: 10px;
   background-color: var(--msg-bg-color);
+  position: relative;
+}
+
+.msg-balloon .triangle {
+  position: absolute;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+}
+
+.msg-balloon:not(.send) .triangle {
+  border-top: 10px solid var(--msg-bg-color);
+  top: 0;
+  left: -10px;
+}
+
+.msg-balloon.send .triangle {
+  border-top: 10px solid var(--bg-send-msg);
+  top: 0;
+  right: -10px;
 }
 
 .msg-box .msg-balloon > p {
